@@ -42,7 +42,7 @@ You can also download the code as a zip file by clicking on the green __Clone or
 ```bash
 ln -s $SCRATCH scratch
 cd $SCRATCH
-git clone https://github.com/eth-cscs/SummerUniversity2023.git
+git clone https://github.com/eth-cscs/SummerUniversity2024.git
 ```
 
 ### On Piz Daint via ssh
@@ -56,7 +56,7 @@ ssh daint
 
 # go to scratch
 cd $SCRATCH
-git clone https://github.com/eth-cscs/SummerUniversity2023.git
+git clone https://github.com/eth-cscs/SummerUniversity2024.git
 ```
 
 ## Updating the repository
