@@ -36,7 +36,7 @@ You can also download the code as a zip file by clicking on the green __Clone or
 
 - Go to https://jupyter.cscs.ch/ and sign in using your CSCS course credentials 
 - Launch JupyterLab (might take a couple of minutes)
-  - Advanced reservation '(reservation name will be updated later)' 
+  - Advanced reservation 'su2024' 
   - Default values for the other fields (unless told otherwise by the instructor)
 - Launch a new terminal : File -> New -> Terminal
 - Issue the following commands on the terminal:
