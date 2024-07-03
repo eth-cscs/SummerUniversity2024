@@ -11,10 +11,11 @@ We will be using Slack to post news and links relevant to the event: you should 
 ## Schedule
 
 ### Group 1 - In-person
-![image](https://github.com/eth-cscs/SummerUniversity2024/assets/4578156/b79953d7-76b2-4e07-b528-39d77a459ec4)
+![image](https://github.com/eth-cscs/SummerUniversity2024/assets/4578156/ba1c58c3-9ee3-403b-978b-1f5b9b2c75cd)
+
 
 ### Group 2 - Online
-![image](https://github.com/eth-cscs/SummerUniversity2024/assets/4578156/dab7f3b5-065d-4514-9497-cbee032cca7d)
+![image](https://github.com/eth-cscs/SummerUniversity2024/assets/4578156/07c52240-884b-472e-9b5d-737632dde429)
 
 ## Link to materials
 
