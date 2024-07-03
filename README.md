@@ -19,8 +19,8 @@ We will be using Slack to post news and links relevant to the event: you should 
 
 ## Link to materials
 
-- [CUDA](./cuda) (Day 1, 2, 3 & 4)
-- [Python HPC](./python-hpc) (Day 4 & 5)
+- [CUDA](./cuda) (Day 1, 2 & 3)
+- [Python HPC](./python-hpc) (Day 4, 5 & 6)
 
 ## Obtaining a copy of this repository
 
