@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH --nodes=16
+#SBATCH --output=job%j.out
+#SBATCH --reservation=summer
+#SBATCH --time=00:05:00
+#SBATCH --constraint=gpu
+
+printf "............................\n"
+printf "%8s%10s%10s\n" "ranks" "no-g2g" "g2g"
+printf "............................\n"
+for ranks in 1 2 4 8 16
+do
+    MPICH_RDMA_ENABLED_CUDA=1 srun -n$ranks -N$ranks  diffusion2d_mpi 5 10000 > tmp
+    time_g2g=`grep ^time tmp | awk '{print $2}'`
+    srun -n$ranks -N$ranks  diffusion2d_mpi 5 10000 > tmp
+    time_vanilla=`grep ^time tmp | awk '{print $2}'`
+    printf "%8d%10.3f%10.3f\n" $ranks $time_vanilla $time_g2g
+done
