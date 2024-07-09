@@ -12,6 +12,40 @@ void axpy(int n, double alpha, const double* x, double* y) {
     }
 }
 
+/**
+// kernel for arbitrary n arrays
+// operating on a single block of 1024 threads
+template<class T>
+__global__
+void axpy(int n, T alpha, const T* x, T* y)
+{
+    int i = threadIdx.x;
+    if (n <= 1024)
+    {
+        if (i < n)
+        {
+            y[i] = y[i] + alpha*x[i];
+        }
+    }
+    else
+    {
+        int k = n/1024;
+        for (int j = 0; j < k; j++)
+        {
+            // strided version (operate on every 1024th element)
+            auto ind = 1024*j + i;
+
+            // banded version (operate on k consecutive elements)
+            // auto ind = k*i + j;
+            if (ind < n)
+            {
+                y[ind] = y[ind] + alpha*x[ind];
+            }
+        }
+    }
+}
+**/
+
 int main(int argc, char** argv) {
     size_t pow = read_arg(argc, argv, 1, 16);
     size_t n = 1 << pow;
