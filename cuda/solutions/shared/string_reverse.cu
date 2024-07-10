@@ -12,7 +12,9 @@ __global__
     int i = threadIdx.x;
     if (i<n) {
         buffer[i] = str[i];
-        __syncthreads();
+    }
+    __syncthreads();
+    if (i<n) {
         str[i] = buffer[n-i-1];
     }
  }
